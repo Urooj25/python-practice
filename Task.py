@@ -75,3 +75,41 @@ print(x)
 x = 5
 x |= 2
 print(x)
+
+#post lab task
+sentence = input("Enter your sentence:")
+Words_to_Count = input("Enter word:")
+y = sentence.find(Words_to_Count)
+
+z = sentence.count(Words_to_Count)
+print(y)
+print(z)
+
+if ("Words_to_Count" not in sentence):
+ print("Word not found")
+#post lab task 2
+Email = input("Enter your Email:")
+x = "@" in Email
+y = "." in Email
+z = Email.endswith(".com") or Email.endswith(".edu")
+
+print(x)
+print(y)
+print(z)
+#task 3 BY USING SPLIT
+My_Email = "Ali123@gmail.com"
+parts = My_Email.split("@")
+Username = parts[0]
+domain = parts[1]
+print(Username)
+print(domain)
+#BY USING FIND
+My_Email = "Ali124@gmail.com"
+Find = My_Email.find("@")
+Username = My_Email[ :Find]
+Domain = My_Email[Find+1:]
+print(Username)
+print(Domain)
+
+
+
