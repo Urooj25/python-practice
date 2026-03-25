@@ -80,12 +80,10 @@ print(x)
 sentence = input("Enter your sentence:")
 Words_to_Count = input("Enter word:")
 y = sentence.find(Words_to_Count)
-
 z = sentence.count(Words_to_Count)
 print(y)
 print(z)
-
-if ("Words_to_Count" not in sentence):
+if (Words_to_Count not in sentence):
  print("Word not found")
 #post lab task 2
 Email = input("Enter your Email:")
