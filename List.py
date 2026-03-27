@@ -31,4 +31,56 @@ print(a[-4:-1])
 Fruits = ["Apple","Banana","Grapes"]
 if "Apple" in Fruits:
     print("Yes, Apple is present")
-#Change List items
+#Change List
+Fruits = ["Apple","Banana","Grapes"]
+Fruits[2] = "Cherry"
+print(Fruits)
+Fruits = ["Apple","Banana","Grapes"]
+Fruits[1:3] = "Onion", "Potato", "Tomato"
+print(Fruits)
+#Replace any value
+Fruits = ["Apple","Banana","Grapes"]
+Fruits[1:2] = ["cheery","Orange"]
+
+print(Fruits)
+#Insert itemsThe insert() method inserts an item at the specified inde
+NUMBERS = [1,2,3,4,5]
+NUMBERS.insert(3,"Urooj")
+print(NUMBERS)
+#Add list itemms
+Fruits = ["Apple","Banana","Grapes"]
+Fruits.append("Cherry")
+print(Fruits)
+#Add elements of two list
+Fruits = ["Apple","Banana","Grapes"]
+NUMBERS = [1,2,3,4,5]
+Fruits.extend(NUMBERS)
+print(Fruits)
+#The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).
+
+Fruits = ["Apple","Banana","Grapes"]
+NUMBERS = (1,2,3,4,5)
+Fruits.extend(NUMBERS)
+print(Fruits)
+#Remove list items
+
+Fruits = ["Apple","Banana","Grapes"]#.remove() method is designed to remove only the first occurrence of the specified value 
+
+Fruits.remove("Apple")
+print(Fruits)
+#Remove Specified Index pop()
+Fruits = ["Apple","Banana","Grapes"]
+Fruits.pop(1)
+print(Fruits)
+#If you do not specify the index, the pop() method removes the last item.
+#del remove
+NUMBERS = [1,2,3,4,5]#ERROR BCS TUPLE KO KRRHI THI
+
+del NUMBERS
+#The clear() method empties the list.
+NUMBERS = [1,2,3,4,5]
+NUMBERS.clear()
+print(NUMBERS)
+
+
+
