@@ -99,6 +99,18 @@ for i in range(len(Names)):
 Names = ["Urooj","Ali","Amna","Komal"]
 [print(x) for x in Names]
 
+#List Comprehension
+Names = ["Urooj","Ali","Amna","Komal"]
+newlist = [ ]
+for i in Names:
+    if "U" in i:
+        newlist.append(i)
+print(newlist)
+#Short cut
+Names = ["Urooj", "Ali", "Amna", "Komal"]
+newlist = [i for i in Names if "U" in i]
+print(newlist)
+
 
 
 
