@@ -81,6 +81,26 @@ del NUMBERS
 NUMBERS = [1,2,3,4,5]
 NUMBERS.clear()
 print(NUMBERS)
+#Loop through a list
+Names = ["Urooj","Ali","Amna","Komal"]
+for x in Names:
+    print(x)#error on 
+#Loop Through the Index Numbers
+Names = ["Urooj","Ali","Amna","Komal"]
+for i in range(len(Names)):
+    print(Names[i])
+    #Using a While Loop
+    Names = ["Urooj","Ali","Amna","Komal"]
+    i = 0
+    while i < len(Names):
+        print(Names[i])
+        i = i+2
+#A short hand for loop that will print all items in a list:
+Names = ["Urooj","Ali","Amna","Komal"]
+[print(x) for x in Names]
+
+
+
 
 
 
