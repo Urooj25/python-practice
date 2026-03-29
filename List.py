@@ -110,6 +110,27 @@ print(newlist)
 Names = ["Urooj", "Ali", "Amna", "Komal"]
 newlist = [i for i in Names if "U" in i]
 print(newlist)
+Names = ["Urooj", "Ali", "Amna", "Komal"]
+newlist = [x.upper() for x in Names]
+print(newlist)
+newlist = [i for i in Names if i != "Urooj"]
+print(newlist)
+#iterable
+newlist = [x for x in range(10)]
+print(newlist)
+#with codition [expression  for item in iterable  if condition]
+newlist = [x for x in range(10) if x>5]
+print(newlist)
+Names = ["Urooj", "Ali", "Amna", "Komal"]
+newlist = ["Hello" for x in Names]
+print(newlist)
+Names = ["Urooj", "Ali", "Amna", "Komal"]
+newlist = [x if x != "Urooj" else  "Warrior" for x in Names]
+print(newlist)
+
+
+
+
 
 
 
