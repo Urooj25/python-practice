@@ -134,7 +134,7 @@ print(Names)
 NUMBERS = [1,4,3,3,2,5]
 NUMBERS.sort()
 print(NUMBERS)
-#Descending sort(reverse = True)
+#Descending sort(reverse = True) pahle sort phir reverse
 Names = ["Urooj", "Ali", "Amna", "Komal"]
 NUMBERS = [1,4,3,3,2,5]
 Names.sort(reverse = True)
@@ -164,11 +164,21 @@ print(thislist)
 thislist = ["banana", "Orange", "Kiwi", "cherry"]
 thislist.reverse()
 print(thislist)
+#Copy a ListYou cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.
 
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+#Another way to make a copy is to use the built-in method list().
 
- 
-
-
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+mylist = list(thislist)
+print(mylist)#Two different list with same variables
+#You can also make a copy of a list by using the : (slice) operator.
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+mylist = thislist[:]
+print(mylist)#fav
+#Join Two Lists
 
 
 
