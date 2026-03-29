@@ -127,8 +127,46 @@ print(newlist)
 Names = ["Urooj", "Ali", "Amna", "Komal"]
 newlist = [x if x != "Urooj" else  "Warrior" for x in Names]
 print(newlist)
+#Sort list
+Names = ["Urooj", "Ali", "Amna", "Komal"]
+Names.sort()#Arrange in assecening order
+print(Names)
+NUMBERS = [1,4,3,3,2,5]
+NUMBERS.sort()
+print(NUMBERS)
+#Descending sort(reverse = True)
+Names = ["Urooj", "Ali", "Amna", "Komal"]
+NUMBERS = [1,4,3,3,2,5]
+Names.sort(reverse = True)
+print(Names)
+NUMBERS.sort(reverse = True)
+print(NUMBERS)
+#Customize Sort Function Apna rule
+def Student(x):
+    return len(x)
+Name = ["Urooj", "Ali", "Amna", "Komal"]
+Name.sort(key = Student)
+print(Name)
+#abs convert + into -
+def myfun(n):
+    return abs(n-50)
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfun)
+print(thislist)
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort()
+print(thislist)#Capital letters pahle aate ha
+# if you want a case-insensitive sort function, use str.lower as a key function:
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)#return same
+print(thislist)
+#The reverse() method reverses the current sorting order of the elements.
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)
 
 
+ 
 
 
 
