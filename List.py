@@ -178,7 +178,18 @@ print(mylist)#Two different list with same variables
 thislist = ["banana", "Orange", "Kiwi", "cherry"]
 mylist = thislist[:]
 print(mylist)#fav
-#Join Two Lists
+#Join Two Lists =
+
+list1 = [1,2,3]
+list2 = [4,5,6]
+list3 = list1+list2
+print(list3)
+#append() or extend()
+list1 = [1,2,3]
+list2 = [4,5,6]
+for x in list2:
+    list1.append(x) 
+print(list1)
 
 
 
