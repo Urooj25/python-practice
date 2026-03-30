@@ -35,4 +35,21 @@ x = (1,2,3)
 y = (4,5,6)
 x += y
 print(x)#del is used to remove complete tuple
+#Unpacking a tuple
+x = ('Apple','Banana','cherry')
+(green,yellow,blue) = x
+print(green)
+print(yellow)
+print(blue)#agr values zayada hu tu* used kr lu more the 1  variable
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+(red,*yellow) = fruits
+print(red)
+print(yellow)
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+(red,*middle,orange) = fruits
+print(red)
+print(middle)
+print(orange)
+
+
 
