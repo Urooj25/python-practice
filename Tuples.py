@@ -73,5 +73,15 @@ tuple4 = tuple1*2#TypeError — tuple ko tuple se multiply nahi kar sakte
 #reason *ka mutlb repitition aha tu tuple*tuple kr du woh kha gha acha kon sa kaam krna ha
 print(tuple4)
 print(tuple3)
+#methos.count()
+x = (1,2,3,4,5,6)
 
+print(x.count(7))#agr value nhi hu gha tu zero day gah
+print(x.index(3))#agr nhi hu gha tu error
+#Code challenge
+fruits = ("apple","banana","cherry")
+print(fruits[1])
+print(len(fruits))
+(a,b,c) = fruits
+print(b)
 
