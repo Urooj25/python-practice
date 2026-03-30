@@ -62,6 +62,16 @@ for i in x:
 #While loop
 x = (1,2,3,4,5,6)
 i = 0
-while i < (x):
+while i < len(x):#len tuple ko number may convert krta ha for comparison else error ay gha
     print(x[i])
     i += 1
+#join tuple
+tuple1 =(1,2,3)
+tuple2 = ('Urooj','Amna','komal')
+tuple3 = tuple1+tuple2
+tuple4 = tuple1*2#TypeError — tuple ko tuple se multiply nahi kar sakte
+#reason *ka mutlb repitition aha tu tuple*tuple kr du woh kha gha acha kon sa kaam krna ha
+print(tuple4)
+print(tuple3)
+
+
