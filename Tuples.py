@@ -50,6 +50,18 @@ fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 print(red)
 print(middle)
 print(orange)
+#loop
+x = (1,2,3,4,5)
+for i in range(len(x)):
+    print(x[i])
 
-
-
+#easy
+x = (1,2,3,4,5)
+for i in x:
+    print(i)
+#While loop
+x = (1,2,3,4,5,6)
+i = 0
+while i < (x):
+    print(x[i])
+    i += 1
