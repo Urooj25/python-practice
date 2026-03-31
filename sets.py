@@ -61,10 +61,48 @@ Grocery = set(("oil","Ghee","Wheat","Rice","seed"))
 
 print(Grocery)
 #Loop set
-Fruits = {"Apple","Banana","Kiwi"}
+Fruits = {"Apple","Banana","Kiwi"}#follow hash order
 for x in Fruits:
     print(x)
-    
+#Frozenset Unlike sets, elements cannot be added or removed from a frozenset.
+
+Fruits = frozenset({"Apple","Banana","Kiwi"})
+print(Fruits)
+print(type(Fruits))
+#join methods .union(), \
+set1 = set(("oil","Ghee","Wheat","Rice","seed"))
+set2 = Numbers = {1,2,3,4,5,False,6,7,8,9,10,True}
+set3 = set1.union(set2)
+se3 = set1 | set2
+print(set3) 
+print(se3)
+#Join Multiple Sets
+set1 = set(("oil","Ghee","Wheat","Rice","seed"))
+set2 = Numbers = {1,2,3,4,5,False,6,7,8,9,10,True}
+set3 = {True,False,1,"Urooj"}
+set4 = set1.union(set2,set3)
+se4 = set1 | set2 | set3
+print(set4)
+print(se4)
+#Join set and tuple
+set1 = set(("oil","Ghee","Wheat","Rice","seed"))
+x = (1,2,3,4,5)
+print(set1.union(x))
+#update() Both union() and update() will exclude any duplicate items
+x = {1,3,45,5,5}
+y = {3,4,5,6,7,4}
+x.update(y)
+print(x)
+#The intersection() and & method will return a new set, that only contains the items that are present in both sets.
+x = {1,3,45,5,5}
+y = {3,4,5,6,7,4}
+x = x.intersection(y)
+y = x & y
+print(x)
+print(y)
+#The & operator only allows you to join sets with sets, and not with other data types like you can with the intersection() method.
+
+
 
 
 
