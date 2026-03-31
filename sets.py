@@ -26,6 +26,22 @@ print("Suger" in Grocery)#Bool return
 Grocery = set(("oil","Ghee","Wheat","Rice"))
 print("Suger" not in Grocery)#Bool return
 #We cannot change items in set but can add
+#add set items .add() cannot change but add
+Grocery = set(("oil","Ghee","Wheat","Rice"))
+Grocery.add("Seeds")
+print(Grocery)
+#update()
+Grocery = set(("oil","Ghee","Wheat","Rice"))
+Numbers = {1,2,3,4,5,False,6,7,8,9,10,True}
+Grocery.update(Numbers)
+print(Grocery)
+#The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).
+
+Grocery = set(("oil","Ghee","Wheat","Rice"))
+Numbers = [1,2,3,4,5]
+Grocery.update(Numbers)
+print(Grocery)
+
 
 
 
