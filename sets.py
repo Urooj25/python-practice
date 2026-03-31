@@ -41,6 +41,25 @@ Grocery = set(("oil","Ghee","Wheat","Rice"))
 Numbers = [1,2,3,4,5]
 Grocery.update(Numbers)
 print(Grocery)
+#To remove an item in a set, use the remove(), or the discard() method.
+Grocery = set(("oil","Ghee","Wheat","Rice","seed"))
+Grocery.remove("seed")
+Grocery.discard("oil")
+print(Grocery)
+#If the item to remove does not exist, discard() will NOT raise an error but remove will give.
+#pop()can remove random value so no good to used
+Grocery = set(("oil","Ghee","Wheat","Rice","seed"))
+x = Grocery.pop()
+print(x)#gives remove item
+print(Grocery)
+#The clear() method empties the set:
+Grocery = set(("oil","Ghee","Wheat","Rice","seed"))
+Grocery.clear()
+print(Grocery)
+#del delete completly
+Grocery = set(("oil","Ghee","Wheat","Rice","seed"))
+del Grocery
+print(Grocery)
 
 
 
