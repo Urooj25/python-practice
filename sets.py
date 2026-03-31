@@ -58,8 +58,13 @@ Grocery.clear()
 print(Grocery)
 #del delete completly
 Grocery = set(("oil","Ghee","Wheat","Rice","seed"))
-del Grocery
+
 print(Grocery)
+#Loop set
+Fruits = {"Apple","Banana","Kiwi"}
+for x in Fruits:
+    print(x)
+    
 
 
 
