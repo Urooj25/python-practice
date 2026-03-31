@@ -15,3 +15,18 @@ print(Mix)
 Grocery = set(("oil","Ghee","Wheat","Rice"))
 print(Grocery)
 print(type(Grocery))
+#Access set items
+#You cannot access items in a set by referring to an index or a key. but can used loop
+Numbers = {1,2,3,4,5,False,6,7,8,9,10,True}
+for x in Numbers:
+    print(x)
+# check
+Grocery = set(("oil","Ghee","Wheat","Rice"))
+print("Suger" in Grocery)#Bool return
+Grocery = set(("oil","Ghee","Wheat","Rice"))
+print("Suger" not in Grocery)#Bool return
+#We cannot change items in set but can add
+
+
+
+
