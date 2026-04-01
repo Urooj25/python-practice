@@ -136,7 +136,12 @@ set2 = {False, "google", 1, "apple", 2, True}
 x.symmetric_difference_update(set2)
 
 print(x)
-
+#code challenge
+colors = {"red","green","blue"}
+print(colors)
+colors.add("yellow")
+colors.discard("green")
+print(len(colors))
 
 
 
