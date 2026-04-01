@@ -147,7 +147,60 @@ Class = {
 }
 Class.clear()
 print(Class)
-#Loop Through a Dictionary
+#Loop Through a Dictionary return key
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+for x in Class:
+    print(x)
+    #to return value as well
+    Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+for x in Class:
+    print(Class[x])
+    #use method.Value
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+for x in Class.values():
+    print(x)
+#to return key
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+for x in Class.keys():
+    print(x)
+#return both keys and values
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+for x in Class.items():
+    print(x)
+
+
+
+
 
 
 
