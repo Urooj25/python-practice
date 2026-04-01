@@ -83,6 +83,27 @@ Class = {
     "friends" : ("Amna","Komal")}
 if "Name" in Class:
     print("Student is present")
+#change dic
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+Class["year"] = 5
+print(Class)
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+Class.update({"Class" : "Beta"})
+print(Class)
+
+
 
 
 
