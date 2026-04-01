@@ -197,6 +197,26 @@ Class = {
     "friends" : ("Amna","Komal")}
 for x in Class.items():
     print(x)
+#Make a copy of a dictionary with the copy() method:
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+Sec = Class.copy()
+print(Sec)
+#Another way to make a copy is to use the built-in function dict().
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+Sec = dict(Class)
+print(Sec)
 
 
 
