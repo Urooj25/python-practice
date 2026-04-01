@@ -101,8 +101,41 @@ y = x & y
 print(x)
 print(y)
 #The & operator only allows you to join sets with sets, and not with other data types like you can with the intersection() method.
+x = {1,3,45,5,5}
+y = {3,4,5,6,7,4}
+x.intersection_update(y)
+print(x)
+set1 = {"apple", 1,  "banana", 0, "cherry"}
+set2 = {False, "google", 1, "apple", 2, True}
+set3 = set1.intersection(set2)
+print(set3)
+#The difference() method will return a new set that will contain only the items from the first set that are not present in the other set.
+x = {1,3,45,5,5}
+y = {3,4,5,6,7,4}
+z = x.difference(y)
+print(z)
+#Another way
+x = {1,3,45,5,5}
+y = {3,4,5,6,7,4}
+z = x - y
+print(z)
+#.difference_update
+x = {1,3,45,5,5}
+y = {3,4,5,6,7,4}
+x.difference_update(y)
+print(x)
+#Symmetric Differences,^
+x = {1,3,45,5,5}
+set2 = {False, "google", 1, "apple", 2, True}
+z = x.symmetric_difference(set2)
+k = x ^ set2
+print(z)
+print(k)
+x = {1,3,45,5,5}
+set2 = {False, "google", 1, "apple", 2, True}
+x.symmetric_difference_update(set2)
 
-
+print(x)
 
 
 
