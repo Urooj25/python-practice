@@ -207,7 +207,8 @@ Class = {
     "friends" : ("Amna","Komal")}
 Sec = Class.copy()
 print(Sec)
-#Another way to make a copy is to use the built-in function dict().
+'''Another way to make a copy is to use the built-in function dict(). used yah ha kay original change nhi huta hm copy pr kaam kr sakhte
+but agr aunder list hu tu original bhi change hu jay gha'''
 Class = {
     "Name" : "Urooj",
     "Class" : "Charlie",
@@ -217,6 +218,58 @@ Class = {
     "friends" : ("Amna","Komal")}
 Sec = dict(Class)
 print(Sec)
+#Nested dict
+
+Imran = {
+    "Family members" : 7,
+    "House" : "own"},
+Employ = {
+    "Family member" : 3,
+    "House" : "own"},
+Kamran = {
+    "Familymembers" : 5,
+    "House" : "Own"}
+
+
+Friends = {
+    "Imran" : Imran,
+    "Employ" : Employ,
+    "Kamran" : Kamran}
+print(Friends)
+#create nested dict
+Nust = {
+    "Electrical" : {
+        "Student1" : 3.9,
+        "Class" : "charlie"},
+    "IT" : {
+        "Student2" : 3.9,
+        "Class" : "Delta"},
+    "Software" : 
+    {
+        "Student3" : 4.00,
+        "Class" : "Alpa"}
+    }
+print(Nust)
+
+for x, obj in Nust.items():
+    print(x)
+    for y in obj:
+     print(y + ":", obj[y])
+#Code Challenge
+car = {
+"brand" : "Ford",
+"model" : "Mustang",
+"year" : 2024}
+x = car.get("model")
+print(x)
+car.update({"color" : "red"})
+car.pop("brand")
+print(car)
+
+    
+    
+
+
 
 
 
