@@ -102,10 +102,51 @@ Class = {
     "friends" : ("Amna","Komal")}
 Class.update({"Class" : "Beta"})
 print(Class)
+#Remove items
+#The pop() method removes the item with the specified key name:
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+Class.pop("friends")
+print(Class)
+#The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
 
-
-
-
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+Class.pop("friends")
+Class.popitem()
+print(Class)
+#The del keyword removes the item with the specified key name:
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")}
+del Class["Class"]
+print(Class)
+#The del keyword can also delete the dictionary completely:
+#The clear() method empties the dictionary:
+Class = {
+    "Name" : "Urooj",
+    "Class" : "Charlie",
+    "year" : 2,
+    "passed" : True,
+    "year" : "Second",
+    "friends" : ("Amna","Komal")
+}
+Class.clear()
+print(Class)
 
 
 
