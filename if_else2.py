@@ -130,3 +130,25 @@ if username is not "":
         print("Pssword required")
 else:
     print("Login failed")
+#Pass statement
+a = 33
+b = 40
+if a < b:
+    pass
+#
+age = 16
+if age > 18:
+    pass
+else:
+    print("Access granted")
+#Using in different 
+Number = 6
+if Number > 0:
+    print("Positive value")
+elif Number == 0:
+    pass
+else:
+    print("The number is negative")
+#While we focus on pass with if statements here, it's also commonly used with loops, functions, and classes.
+def discount_amount(price):
+    pass
