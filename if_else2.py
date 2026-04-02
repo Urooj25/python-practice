@@ -69,3 +69,64 @@ if Score >= 0 and Score <= 100:
     print("Valid score")
 else:
     print("Invalid score")
+#Nested if
+x = 16
+if x > 10:
+    print("Above 10")
+    if x > 20:
+        print("Also above 20")
+    else:
+        print("Not above 20")
+#task
+Age = 17
+has_licenced = True
+if Age >= 18:
+    if has_licenced:
+        print("You can drive")
+    else:
+            ("You need licenced")
+else:
+    print("You are too young to drive")
+#Multiple level of nesting
+Score = int(input("Enter you score:"))
+Attendence = int(input("Enter your attendence:"))
+is_submitted = True
+if Score > 65:
+    if Attendence >= 75:
+        if is_submitted:
+            print("pass with good standing")
+        else:
+            print("Pass but missing assignment")
+    else:
+        print("Pass but Attendence is low")
+else:
+    print("You are fail")
+#Tak
+Tem = 15
+is_sunny = True
+if Tem >= 20:
+    if is_sunny:
+        print("Weather is good")
+else:
+    print("The weather is not good")
+#Shortcut used and
+Tem = 15
+is_sunny = True
+if Tem >= 20 and is_sunny:
+    print("Weather is good")
+else:
+    print("The weather is not good")
+#Login validation
+username = ""
+password = 12345678
+is_active = True
+if username is not "":
+    if password:
+        if is_active:
+            print("Login successful")
+        else:
+            print("Account is not active")
+    else:
+        print("Pssword required")
+else:
+    print("Login failed")
