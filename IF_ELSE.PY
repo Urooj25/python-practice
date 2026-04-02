@@ -69,5 +69,28 @@ elif day == 5:
     print("friday")
 else:
     print("Weekend")
-    
+#checking even and odd
+a = int(input("Enter a number:"))
+if a % 2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd")
 
+#Temperature check
+Temperature = int(input("Enter todays temperature:"))
+if Temperature > 30:
+    print("Its hot outside")
+elif Temperature > 20:
+    print("Its warm outside")
+elif Temperature > 10:
+    print("Its cold outside")
+    
+else:
+    print("Its freezing Temp outside")
+#login
+Username = input("Enter your username:")
+Password = (input("Enter your password:"))
+if len(Username) > 0 and len(Password)  > 0:
+    print(f"Hello, {Username}!")
+else:
+    print("Please enter valid username and password")
