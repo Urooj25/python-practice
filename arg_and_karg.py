@@ -58,7 +58,12 @@ my_function("emil123", age = 25, city = "Oslo", hobby = "coding")
 def my_function(a,b,c):
     return a + b + c
 numbers = [1,2,3]
-result = my_function(*numbers)
+result = my_function(*numbers)#unpack tuple
 print(result)
+#
+def my_function(name, sirname):
+    print("hello "  ,name , sirname)
+person = {"name":"urooj", "sirname": "fatima"}
+my_function(**person)#unpack dictionary
 
 
