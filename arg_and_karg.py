@@ -47,5 +47,18 @@ def my_function(**variables):
     print("city is: ",variables["city"])
     print("all data is", variables)
 my_function(name= "urooj", age = 21, city = "wahcantt")#Inside the function, kwargs becomes a dictionary containing all the keyword arguments:
+def my_function(username, **details):
+  print("Username:", username)
+  print("Additional details:")
+  for key, value in details.items():
+    print(" ", key + ":", value)
+
+my_function("emil123", age = 25, city = "Oslo", hobby = "coding")
+#If you have values stored in a list, you can use * to unpack them into individual arguments:
+def my_function(a,b,c):
+    return a + b + c
+numbers = [1,2,3]
+result = my_function(*numbers)
+print(result)
 
 
