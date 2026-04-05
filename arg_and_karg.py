@@ -1,4 +1,4 @@
-#*args and **kwargs allow functions to accept a unknown number of arguments.
+#*args and **kwargs allow functions to accept a unknown number of arguments.(tuple)
 def my_function(*kids):
     print("The youngest child is " + kids[1])
 my_function("sara","amna","zara")
@@ -25,5 +25,27 @@ print(my_function(1,2,3))
 print(my_function(10,20,30,40))
 print(my_function(5))
 #finding the maximum value
+# 
+def my_function(*numbers):
+ if len(numbers) == 0:
+  return none
+ max_num = numbers[0]
+ for num in numbers:
+    if num > max_num:
+        max_num = num
+ return max_num
+print(my_function(3,7,2,9,1))
+#Using **kwargs to accept any number of keyword arguments:
+def my_function(**kids):
+    print("his last name is " + kids["lname"])
+my_function(fname = "Toms", lname = "refses")
+#The **kwargs parameter allows a function to accept any number of keyword arguments.(Dictionary bnata ha)
+def my_function(**variables):
+    print("type:", type(variables))
+    print("Name:",variables["name"])
+    print("age is : ", variables["age"])
+    print("city is: ",variables["city"])
+    print("all data is", variables)
+my_function(name= "urooj", age = 21, city = "wahcantt")#Inside the function, kwargs becomes a dictionary containing all the keyword arguments:
 
 
