@@ -84,3 +84,13 @@ def function():
     return "Hello how are you?"
 print(function.__name__)
 #mport functools.wraps to preserve the original function name and docstring.
+import functools
+def myfunction(func):
+    @functools.wraps(func)
+    def inner():
+        return func().upper()
+    return inner
+@myfunction
+def function():
+    return "Hello how are you?"
+print(function.__name__)
