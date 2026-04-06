@@ -39,4 +39,21 @@ def myfunction(func):
 def function(name):
     return "hello " + name
 print(function("john"))
+#Task
+def myfunction(n):
+    def changecase(fun):
+        def myinner():
+            if n == 1:
+                a =  fun().upper()
+            else:
+                a = fun().lower
+            return a
+        return myinner
+    return changecase
+@myfunction(1)
+def function():
+    return "Hello linus" 
+print(function())
 
+#Multiple Decorators
+        
