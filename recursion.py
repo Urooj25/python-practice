@@ -14,3 +14,33 @@ def fictoral(n):
         return n*fictoral(n-1)
 print(fictoral(5))
 #Loop aur Recursion dono baar baar kaam karte hain — lekin Recursion mein function khud ko call karta hai, koi for ya while nahi hota!
+def factorial_loop(n):
+    result = 1
+    for i in range(1,n+1):
+        result *= i
+    return result
+print(factorial_loop(5))
+def factorial_loop(n):
+    result = 1
+    for i in range(1, n+1):
+        result *= i
+    return result
+    #Fibonacci Sequence Har number = pichlay 2 numbers ka sum
+def Fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return Fibonacci(n-1) + Fibonacci(n-2)
+print(Fibonacci(7))
+#Recursion with Lists
+def sumlist(numbers):
+    if len(numbers) == 0:
+        return 0
+    else:
+        return numbers[0] + sumlist(numbers[1:])
+my_list= [1,2,3,4,5]
+print(sumlist(my_list))
+
+       
+
+
