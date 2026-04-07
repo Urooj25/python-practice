@@ -40,7 +40,23 @@ def sumlist(numbers):
         return numbers[0] + sumlist(numbers[1:])
 my_list= [1,2,3,4,5]
 print(sumlist(my_list))
+#Find the maximum value in a list:
+def find_max(numbers):
+  if len(numbers) == 1:
+    return numbers[0]
+  else:
+    max_of_rest = find_max(numbers[1:])
+    return numbers[0] if numbers[0] > max_of_rest else max_of_rest
 
+my_list = [3, 7, 2, 9, 1]
+print(find_max(my_list))
+#Recursion Depth Limit
+import sys
+print(sys.getrecursionlimit())
+#If you need deeper recursion, you can increase the limit, but be careful as this can cause crashes:
+import sys
+sys.setrecursionlimit(2000)
+print(sys.getrecursionlimit())
        
 
 
