@@ -22,7 +22,7 @@ def Fibonacci():
         yield a
         a,b = b,a+b
 gen = Fibonacci()
-for _ in range(100):
+for _ in range(100):## _ = "count mujhe nahi chahiye"
     print(next(gen))
     ''' ❌ Yeh dangerous hai
 while True:
@@ -38,4 +38,14 @@ next(gen)#Prime the generator
 gen.send("Hello")
 gen.send("Urooj")
 #close() Method
+def my_gen():
+    try:#Yahan generator ka asli kaam
+        yield 1
+        yield 2#Kabhi nahi chale – close ho gaya
+        yield 3
+    finally:#Band hote waqt ZAROOR chale
+        print("generator closed")
+gen = my_gen()
+print(next(gen))
+gen.close()# without finally # koi message nahi – generator chupke band ho gaya 👻#Generator force band karo
 
