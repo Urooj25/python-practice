@@ -35,3 +35,23 @@ gen = large_sequence(100000)
 print(next(gen)) #0
 print(next(gen))#1
 print(next(gen))#output 0 1 2 bcz ek ek krkay store krta ha next bol rha ha agla du
+# using next()
+def names():
+    yield "Urooj"
+    yield "Amna"
+    yield "komal"
+gen = names()
+print(next(gen))
+print(next(gen))
+print(next(gen))
+#StopIteration  =  "Bhai, mere paas aur kuch nahi!"
+def simple_gen():
+  yield 1
+  yield 2
+
+gen = simple_gen()
+print(next(gen))
+print(next(gen))
+print(next(gen)) # This will raise StopIteration
+for value in names():
+    print(value)   # khud ruk jaata hai, error nahi ✅
