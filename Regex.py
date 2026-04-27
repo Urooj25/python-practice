@@ -66,6 +66,11 @@ import re
 txt = "The rain in Spain"
 x = re.search(r"\bS\w+", txt)
 print(x.group())
+import re
+
+txt = "The rain in Spain"
+x = re.search("Spain",txt)
+print(x.span())#12,17 17 issliya aay bcz hm last may +1 krta ha
 
 
 
