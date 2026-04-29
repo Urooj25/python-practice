@@ -79,3 +79,27 @@ U = f"Number format{56:n}"
 print(U)
 V = f"Percentage format{67:%}"
 print(V)
+#String format()
+price = 49
+txt = "The price is {} dollars"
+print(txt.format(price))
+#Multiple Values
+quantity = 3
+itemno = 567
+price = 49
+myorder = "I want {} pieces of item number {} for {:.2f} dollars."
+print(myorder.format(quantity, itemno, price))
+#You can use index numbers (a number inside the curly brackets {0}) to be sure the values are placed in the correct placeholders:
+x = 3
+y = 50
+z = 49
+txt = "we need potato {0} and tomato {1} for {2:.2f}dollers"
+print(txt.format(x,y,z))
+#Also, if you want to refer to the same value more than once, use the index number:
+age = 21
+name = "Urooj"
+txt = "MY name is {1}.{1} is {0} yaer old"
+print(txt.format(age,name))
+#Named Indexes
+cars = "I have a {carname} and it is a{model}"
+print(cars.format(carname = "corrolla", model =" Mustang" ))
