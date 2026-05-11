@@ -30,4 +30,34 @@ def divide(a,b):
         return result
 x = divide(5,0)
 print(x)
+def smart_divide(a, b):
+    try:
+        result = a / b
+    except ZeroDivisionError:
+        result = "Zero se divide nahi kar sakte! 🚫"
+    except TypeError:
+        result = "Galat type hai! 🔤"
+    except ValueError:
+        result = "Galat value hai! ❌"
+    except IOError:
+        result = "File problem! 📁"
+    except EOFError:
+        result = "File khatam! 📖"
+    except ArithmeticError:
+        result = "Maths galti! 🔢"
+    except:
+        result = "Koi aur error! 🤷"
+    return result
+    #def testing(x):
+    try:
+        print('Trying some code')
+        2 / x
+    except ZeroDivisionError:
+        print('ZeroDivisionError raised here')
+    except:
+        print('Error raised here')
+    else:
+        print('Else clause')
+    finally:
+        print('Finally')
 
